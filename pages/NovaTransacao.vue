@@ -25,27 +25,67 @@
                 label="Gênero"
               />
             </v-col>
+            <v-col cols="12" md="3">
+              <v-text-field
+                v-model="transacao.materiais.bolas"
+                type="number"
+                autocomplete="off"
+                label="Bolas"
+              />
+            </v-col>
+            <v-col cols="12" md="3">
+              <v-text-field
+                v-model="transacao.materiais.bombaId"
+                type="text"
+                autocomplete="off"
+                label="Id da Bomba"
+              />
+            </v-col>
+            <v-col cols="12" md="3">
+              <v-text-field
+                v-model="transacao.materiais.cones"
+                type="number"
+                autocomplete="off"
+                label="Cones"
+              />
+            </v-col>
+            <v-col cols="12" md="3">
+              <v-text-field
+                v-model="transacao.materiais.bolachas"
+                type="number"
+                autocomplete="off"
+                label="Bolachas"
+              />
+            </v-col>
             <v-col cols="12">
               <v-text-field
-                v-model="transacao.materiais"
-                label="Materiais emprestados"
+                v-model="transacao.materiais.outros"
+                type="text"
+                autocomplete="off"
+                label="Outros materiais"
               />
             </v-col>
             <v-col cols="12" md="6">
               <v-text-field
                 v-model="transacao.responsavelRetirada.nome"
+                type="text"
+                autocomplete="off"
                 label="Responsável pela retirada"
               />
             </v-col>
             <v-col cols="12" md="6">
               <v-text-field
                 v-model="transacao.responsavelRetirada.telefone"
+                type="text"
+                autocomplete="off"
                 label="Informações de contato"
               />
             </v-col>
             <v-col cols="12">
               <v-text-field
                 v-model="transacao.responsavelInterno.nome"
+                type="text"
+                autocomplete="off"
                 label="Responsável Interno"
               />
             </v-col>
