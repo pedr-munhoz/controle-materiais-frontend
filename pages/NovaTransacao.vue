@@ -14,7 +14,7 @@
             <v-col cols="12" md="6">
               <v-select
                 v-model="transacao.modalidade"
-                :items="selectModalidade"
+                :items="modalidades"
                 label="Modalidade"
               />
             </v-col>
@@ -67,8 +67,13 @@ export default {
   data: () => ({
     transacao: new Transacao(),
     selectGenero: ['Feminino', 'Masculino', 'Misto'],
-    selectModalidade: ['Basquete', 'Futsal', 'Vôlei'],
   }),
+
+  computed: {
+    modalidades() {
+      return this.$store.getters['modalidades/getModalidades'];
+    },
+  },
 
   methods: {
     enviar() {
